@@ -52,10 +52,10 @@ async function buildAll() {
     bundle: true,
     format: "cjs",
     outfile: "dist/index.cjs",
-    define: {
-      "process.env.NODE_ENV": '"production"',
-    },
-    minify: true,
+    // Do NOT define NODE_ENV here - let it be set at runtime
+    // Do NOT minify - it breaks import.meta.url and path resolution
+    minify: false,
+    sourcemap: false,
     external: externals,
     logLevel: "info",
   });
