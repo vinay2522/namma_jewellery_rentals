@@ -4,7 +4,9 @@ import path from "path";
 import type { Response } from "express";
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(__dirname, "public");
+  // In production, the server runs from dist/index.cjs
+  // The public folder is at dist/public (relative to cwd when npm start is run)
+  const distPath = path.resolve(process.cwd(), "dist", "public");
   
   if (!fs.existsSync(distPath)) {
     throw new Error(
