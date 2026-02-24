@@ -8,7 +8,18 @@ export function serveStatic(app: Express) {
   // The public folder is at dist/public (relative to cwd when npm start is run)
   const distPath = path.resolve(process.cwd(), "dist", "public");
   
+  console.log(`[Static Server] Looking for static files at: ${distPath}`);
+  console.log(`[Static Server] Path exists: ${fs.existsSync(distPath)}`);
+  console.log(`[Static Server] CWD: ${process.cwd()}`);
+  
   if (!fs.existsSync(distPath)) {
+    console.error(`ERROR: Could not find the build directory: ${distPath}`);
+    // List what's actually in dist/
+    const distParent = path.resolve(process.cwd(), "dist");
+    if (fs.existsSync(distParent)) {
+      console.log(`Contents of ${distParent}:`);
+      console.log(fs.readdirSync(distParent));
+    }
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`,
     );
