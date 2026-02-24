@@ -1,0 +1,11 @@
+.git
+.gitignore
+README.md
+client
+server
+script
+vite-plugin-meta-images.ts
+vite.config.ts
+tsconfig.json
+.env
+data/
