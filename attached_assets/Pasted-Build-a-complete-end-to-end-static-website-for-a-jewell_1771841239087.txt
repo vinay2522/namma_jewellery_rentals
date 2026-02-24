@@ -1,0 +1,159 @@
+Build a complete end-to-end static website for a jewellery rental business called 
+"Namma Jewellery Rentals", located in Bangalore, India.
+
+The website must follow a SAFE jewellery rental model:
+- Products are displayed like an e-commerce site
+- Customers submit booking requests via website
+- Admin manually approves bookings
+- Payment is collected ONLY AFTER approval via payment links
+- No automatic checkout, no COD, no shipping
+
+========================
+WEBSITE STRUCTURE
+========================
+
+Create a responsive single-page website using:
+- HTML
+- CSS
+- Vanilla JavaScript only
+(No backend, no frameworks)
+
+Files required:
+- index.html
+- style.css
+- script.js
+
+========================
+SECTIONS REQUIRED
+========================
+
+1. HERO SECTION
+Title:
+"Bridal Jewellery on Rent in Bangalore"
+
+Buttons:
+- "Book via Website"
+- "Book on WhatsApp"
+- "Book on Instagram"
+
+Mention clearly:
+"Payments accepted after confirmation only"
+
+------------------------
+
+2. JEWELLERY CATEGORIES
+Display cards for:
+- Temple Jewellery
+- Kundan Jewellery
+- Antique Bridal Jewellery
+
+------------------------
+
+3. PRODUCT CATALOGUE
+Display jewellery products similar to an e-commerce site.
+
+Each product card must have:
+- Image (placeholder allowed)
+- Jewellery Name
+- Category
+- Optional Rental Price
+- Button: "Book This Jewellery"
+
+------------------------
+
+4. BOOKING FLOW (IMPORTANT)
+
+When user clicks "Book This Jewellery":
+- Redirect to a booking form URL
+- Pass jewellery name as a query parameter
+
+Example:
+booking-form-url?product=Temple_Bridal_Set_01
+
+------------------------
+
+5. BOOKING SECTION (WEBSITE BOOKING)
+
+Include a booking form section with:
+- Full Name
+- Phone Number
+- Event Date
+- Jewellery Name (auto-filled from product)
+- Rental Duration
+- Message
+
+Mention clearly:
+"This is a booking request only. Our team will confirm availability."
+
+------------------------
+
+6. PAYMENT FLOW SECTION (VERY IMPORTANT)
+
+Display a section explaining PAYMENT PROCESS:
+
+Step-by-step:
+1. Customer submits booking request via website
+2. Admin verifies availability
+3. Admin sends a PAYMENT LINK
+4. Customer completes payment
+5. Pickup appointment is confirmed
+
+Accepted payment modes (AFTER approval):
+- Credit Card
+- Debit Card
+- Net Banking
+- UPI (GPay, PhonePe, Paytm, BHIM)
+
+Mention payment gateways:
+- Razorpay Payment Links
+- Cashfree Payment Links
+
+IMPORTANT:
+- No payment gateway integration on website
+- No checkout page
+- No COD
+- Payment link is sent manually after approval
+
+------------------------
+
+7. SAFETY & TERMS SECTION (MANDATORY)
+
+Clearly display:
+- Booking subject to availability
+- Security deposit mandatory
+- Pickup & return only (Bangalore)
+- No shipping
+- No automatic payments
+- Damage or loss policy applies
+
+------------------------
+
+8. CONTACT SECTION
+
+Include:
+- WhatsApp booking link
+- Instagram profile link
+- Location: Bangalore
+
+========================
+DESIGN REQUIREMENTS
+========================
+- Clean, professional, bridal-friendly design
+- Mobile-first responsive layout
+- Elegant fonts and colors
+- Clear call-to-action buttons
+
+========================
+TECHNICAL CONSTRAINTS
+========================
+- Static website only
+- No backend
+- No database
+- No payment integration
+- Ready to deploy on Vercel
+
+========================
+FINAL GOAL
+========================
+The website should look like a product catalog similar to Flipkart,
+but follow a SAFE rental model with manual approval and payment links.
