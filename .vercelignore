@@ -1,11 +1,8 @@
 .git
-.gitignore
-README.md
-client
-server
-script
-vite-plugin-meta-images.ts
-vite.config.ts
-tsconfig.json
+.local
+.replit
 .env
+BOOKINGS_ACCESS_GUIDE.md
+README.md
+attached_assets/
 data/
